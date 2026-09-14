@@ -951,7 +951,7 @@
   <header>
     <div class="header-top">
       <div class="header-logo" onclick="goHome()">
-        <img src="beycome-logo.png" alt="beycome" style="height:32px;width:auto;display:block;">
+        <img src="beycome-logo.png" onerror="this.onerror=null;this.src='https://beycome-operations.github.io/Title/beycome-logo.png';" alt="beycome" style="height:32px;width:auto;display:block;">
         <span>Buyer Program Training</span>
       </div>
       <div class="header-stats">
@@ -3264,7 +3264,7 @@
           saveState();
         });
       }
-      ['offerNoTitle', 'newListings', 'prepaidOfferHelp', 'fileReady'].forEach(key => {
+      Object.keys(PRIORITIZATION_EXPECTED_ORDER).forEach(key => {
         const select = document.getElementById(`priority-${key}`);
         if (select) {
           select.addEventListener('change', event => {
