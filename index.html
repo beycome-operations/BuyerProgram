@@ -1157,7 +1157,7 @@
           <tr style="background:#fafbff;"><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;font-weight:700;">Daily priority</td><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;">1) Web leads → 2) Under-contract sellers → 3) Follow-ups → 4) New listing outbound</td></tr>
           <tr><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;font-weight:700;">SMS rule</td><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;">One unsolicited text to a non-responder. Ever. Reply opens two-way.</td></tr>
           <tr style="background:#fafbff;"><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;font-weight:700;">Qualify before BBA</td><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;">Actively looking + timeline. Log area, budget, financing, agent status, preference.</td></tr>
-          <tr><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;font-weight:700;">BBA links</td><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;">Zoho Sign: FL/TX (with ABA) · All other states</td></tr>
+          <tr><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;font-weight:700;">BBA links</td><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;">Zoho Sign: one Buyer Broker Agreement SignForm link (FL/TX coverage pending confirmation)</td></tr>
           <tr style="background:#fafbff;"><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;font-weight:700;">Showings</td><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;">Request in Back Office → Christian L books Showami → email confirm. First 5 free, then $45 each at closing.</td></tr>
           <tr><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;font-weight:700;">Offers</td><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;">Christian L drafts · you email listing agent directly · CC sam@beycome.com</td></tr>
           <tr style="background:#fafbff;"><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;font-weight:700;">Compensation</td><td style="padding:9px 10px;border-bottom:1px solid #e0e0e0;">Never in MLS fields. Listing side signs nothing of ours. Lives in the offer/counter.</td></tr>
@@ -1267,7 +1267,7 @@
               <tbody>
                 <tr><td><strong>Zoho CRM, Buyer Leads module</strong></td><td>Your pipeline. Kanban board by status, all notes, follow-up dates, BBA status, showing counts, disqualification reasons.</td><td>System of record. Every touch gets logged here.</td></tr>
                 <tr><td><strong>Zoho Voice</strong></td><td>Click-to-dial from the CRM record, auto-logged calls, call recording, SMS.</td><td>Required channel for every call and text. No personal phone.</td></tr>
-                <tr><td><strong>Zoho Sign</strong></td><td>Sends the Buyer Broker Agreement. Two links: one for FL/TX, one for all other states.</td><td>Pick the right link. FL/TX includes the Affiliated Business Arrangement disclosure.</td></tr>
+                <tr><td><strong>Zoho Sign</strong></td><td>Sends the Buyer Broker Agreement. One SignForm link - the buyer picks the Buyer role and enters their own name and email.</td><td>Pick the right link. FL/TX includes the Affiliated Business Arrangement disclosure.</td></tr>
                 <tr><td><strong>Zoho Cliq</strong></td><td>Internal chat with Christian L, Christian G, Sam, and the team. Daily announcements, quick questions, wins.</td><td>Ask here before you guess.</td></tr>
                 <tr><td><strong>Zoho Mail</strong></td><td>Your email. Under-contract seller notifications land here. Showing confirmations land here.</td><td>Check it between call blocks. Same-day response on anything customer-facing.</td></tr>
                 <tr><td><strong>Showami</strong></td><td>Third-party showing agents who open and show the property. Christian L books it after you request it.</td><td>You request through Back Office, not directly in Showami.</td></tr>
@@ -1288,12 +1288,25 @@
 
             <div class="callout warn">
               <label>Zoho status fields to keep current</label>
-              Status, Buyer Agreement Signed (Yes/No), Follow-up Date, Not Interested Reason, Call Notes, DNC flag. The BBA Signed field triggers automations, so flip it the moment Zoho Sign completes.
+              Status, BBA Signed (Yes/No), Date BBA Sent, Date BBA Signed, Follow-up Date, Lost Reason, Do Not Contact, Email Opt Out. Call notes go in the Notes related list - the Call Log field is written by automation and will overwrite anything you type. The BBA Signed field triggers an email to Christian L, so flip it the moment Zoho Sign completes.
             </div>
 
             <div class="callout info">
               <label>Do Not Contact</label>
               DNC is a flag, not a status. A DNC contact keeps their last status but is excluded from every call and text. If someone asks you to stop contacting them, check the box immediately and never reach out again.
+            </div>
+
+
+            <h3>Walkthrough videos</h3>
+            <div class="walkthroughs">
+              <figure style="margin:0 0 20px;">
+                <video controls preload="metadata" playsinline style="width:100%;max-width:760px;display:block;border-radius:10px;background:#000;">
+                  <source src="videos/08.mp4" type="video/mp4">
+                  Your browser cannot play this file. <a href="videos/08.mp4">Download the recording</a>.
+                </video>
+                <figcaption style="font-size:13px;line-height:1.5;margin-top:6px;opacity:.75;"><strong>08 &middot; Click-to-dial, call logs and recordings</strong><br>Recording in progress - placeholder until the file is uploaded.</figcaption>
+              </figure>
+              
             </div>
           </div>
         `
@@ -1424,6 +1437,19 @@
 
             <h3>What "same day" means</h3>
             <p>Before you log off. If the notification hits at 5:40 PM, you call at 5:41 PM. If they don't answer, you leave a voicemail, send the one permitted SMS, send the email, and set a follow-up for tomorrow morning. Then you log off.</p>
+
+
+            <h3>Walkthrough videos</h3>
+            <div class="walkthroughs">
+                            <figure style="margin:0 0 20px;">
+                <img src="images/16a-v2.png" alt="What the website form lead alert looks like" style="width:100%;max-width:760px;display:block;border-radius:10px;border:1px solid #e3e6ea;">
+                <figcaption style="font-size:13px;line-height:1.5;margin-top:6px;opacity:.75;"><strong>16 &middot; What the website form lead alert looks like</strong><br>Subject: New Buyer Lead from beycome</figcaption>
+              </figure>
+                            <figure style="margin:0 0 20px;">
+                <img src="images/17a.png" alt="What the under-contract seller notification looks like" style="width:100%;max-width:760px;display:block;border-radius:10px;border:1px solid #e3e6ea;">
+                <figcaption style="font-size:13px;line-height:1.5;margin-top:6px;opacity:.75;"><strong>17 &middot; What the under-contract seller notification looks like</strong><br>Subject: Change Status to Under Contract Property ID# &hellip;</figcaption>
+              </figure>
+            </div>
           </div>
         `
       },
@@ -1442,40 +1468,38 @@
             <table>
               <thead><tr><th>Status</th><th>Means</th><th>Move it when</th></tr></thead>
               <tbody>
-                <tr><td><strong>New Lead</strong></td><td>Not yet contacted</td><td>Lead arrives</td></tr>
-                <tr><td><strong>No Response</strong></td><td>Full cadence done, no live conversation</td><td>Last touch in the cadence is complete. Set Follow-up Date +30 days.</td></tr>
-                <tr><td><strong>Interested</strong></td><td>Live conversation, wants information, not yet qualified</td><td>They engage but you haven't confirmed timeline and intent</td></tr>
-                <tr><td><strong>Upon Sale</strong></td><td>Beycome seller who will buy after their listing sells</td><td>They confirm they're buying next, but only once the sale closes. Monthly touch until the under-contract trigger fires.</td></tr>
-                <tr><td><strong>Future Follow-Up</strong></td><td>Buying 6+ months out</td><td>Real buyer, wrong timing. Set Follow-up Date, monthly touch.</td></tr>
-                <tr><td><strong>BBA Sent</strong></td><td>Qualified, agreement out via Zoho Sign</td><td>You send the link</td></tr>
-                <tr><td><strong>Active Buyer</strong></td><td>BBA signed, touring or preparing to offer</td><td>Zoho Sign completes. Flip Buyer Agreement Signed = Yes.</td></tr>
-                <tr><td><strong>Offer Submitted</strong></td><td>Offer out, awaiting response</td><td>You email the offer to the listing agent</td></tr>
-                <tr><td><strong>Under Contract</strong></td><td>Executed contract, handed to Christian G</td><td>You send the handoff package</td></tr>
-                <tr><td><strong>Closed</strong></td><td>Funded and recorded</td><td>Christian G confirms closing</td></tr>
-                <tr><td><strong>Not Interested</strong></td><td>Declined or does not qualify. <strong>Reason required.</strong></td><td>You learn why</td></tr>
-                <tr><td><strong>Dead / Lost</strong></td><td>Unreachable after everything, or went elsewhere. <strong>Reason required.</strong></td><td>Day 37 with no contact, or they tell you they closed with someone else</td></tr>
+                <tr><td><strong>NEW</strong></td><td>Not yet contacted</td><td>Lead arrives</td></tr>
+                <tr><td><strong>FOLLOW UP - NO ANSWER</strong></td><td>Full cadence done, no live conversation</td><td>Last touch in the cadence is complete. Set Follow-up Date +30 days.</td></tr>
+                <tr><td><strong>UPON SALE</strong></td><td>Beycome seller who will buy after their listing sells</td><td>They confirm they are buying next, but only once the sale closes. Monthly touch until the under-contract trigger fires.</td></tr>
+                <tr><td><strong>LONG TERM FOLLOW UP</strong></td><td>Real buyer, buying 6+ months out</td><td>Right buyer, wrong timing. Set Follow-up Date, monthly touch.</td></tr>
+                <tr><td><strong>ACTIVE BUYERS</strong></td><td>Qualified and working with you - agreement out, touring, or preparing to offer</td><td>They qualify and you send the BBA. Set Date BBA Sent.</td></tr>
+                <tr><td><strong>AGREEMENT SIGNED</strong></td><td>Buyer Broker Agreement returned signed</td><td>Zoho Sign completes. Set BBA Signed = Yes and Date BBA Signed.</td></tr>
+                <tr><td><strong>NOT INTERESTED</strong></td><td>Declined or does not qualify. Always set a Lost Reason.</td><td>You learn why</td></tr>
+                <tr><td><strong>LOST (DUPLICATES)</strong></td><td>Duplicate record, or the buyer went elsewhere</td><td>Deduplication flags it automatically, or they tell you they closed with someone else</td></tr>
               </tbody>
             </table>
-            <p><strong>Active vs Future:</strong> buying inside 6 months = Active path. 6+ months = Future Follow-Up.</p>
 
-            <h3>Disqualification reasons (mandatory)</h3>
-            <p>Sam wants to know exactly why every lead that doesn't qualify didn't qualify. When you set Not Interested or Dead / Lost, you must pick one:</p>
+            <div class="callout info">
+              <label>Where the rest of the deal lives</label>
+              The Zoho board ends at AGREEMENT SIGNED. Offers, under contract and closing are tracked in Back Office, not here - see Sections 9 and 10. There is no CRM column for them.
+            </div>
+            <p><strong>Active vs long term:</strong> buying inside 6 months = ACTIVE BUYERS path. 6+ months = LONG TERM FOLLOW UP.</p>
+
+            <h3>Disqualification reasons</h3>
+            <p>Sam wants to know exactly why every lead that doesn't qualify didn't qualify. When you set NOT INTERESTED or LOST (DUPLICATES), set Lost Reason to one of these:</p>
             <ul>
-              <li>Already bought a home</li>
-              <li>Working with an agent (signed BBA elsewhere)</li>
-              <li>State we don't cover</li>
-              <li>Wants to buy a Beycome listing (no dual representation)</li>
-              <li>FSBO where the seller is not paying a commission</li>
-              <li>Renting / not buying</li>
-              <li>Investor / new build / owns another property</li>
-              <li>Buying 12+ months out (usually Future Follow-Up instead)</li>
-              <li>Unreachable after full cadence</li>
-              <li>Other (free text required)</li>
+              <li>Already Purchased</li>
+              <li>Working with an Agent</li>
+              <li>Decided to rent</li>
+              <li>Building / built new home</li>
+              <li>Owns another property</li>
+              <li>Investor</li>
+              <li>Other - explain in one sentence in the Notes</li>
             </ul>
 
             <div class="callout warn">
               <label>No reason, no close</label>
-              A lead closed without a reason will be reopened. This data tells us where the website copy, the sales script, and the coverage map need to change.
+              Nothing in Zoho forces you to fill this in, which is exactly why it is on you. This data tells us where the website copy, the sales script, and the coverage map need to change.
             </div>
 
             <h3>Mandatory notes on every qualified lead</h3>
@@ -1500,6 +1524,48 @@
             <div class="callout info">
               <label>The one shared health metric</label>
               <strong>BBA signed to first showing scheduled.</strong> If you are signing five a week and one is touring, we are signing the wrong people or losing them at handoff to Christian L. Watch this number yourself.
+            </div>
+
+
+            <h3>Walkthrough videos</h3>
+            <div class="walkthroughs">
+              <figure style="margin:0 0 20px;">
+                <video controls preload="metadata" playsinline style="width:100%;max-width:760px;display:block;border-radius:10px;background:#000;">
+                  <source src="videos/01.mp4" type="video/mp4">
+                  Your browser cannot play this file. <a href="videos/01.mp4">Download the recording</a>.
+                </video>
+                <figcaption style="font-size:13px;line-height:1.5;margin-top:6px;opacity:.75;"><strong>01 &middot; The Kanban board</strong><br>Recording in progress - placeholder until the file is uploaded.</figcaption>
+              </figure>
+              <figure style="margin:0 0 20px;">
+                <video controls preload="metadata" playsinline style="width:100%;max-width:760px;display:block;border-radius:10px;background:#000;">
+                  <source src="videos/02.mp4" type="video/mp4">
+                  Your browser cannot play this file. <a href="videos/02.mp4">Download the recording</a>.
+                </video>
+                <figcaption style="font-size:13px;line-height:1.5;margin-top:6px;opacity:.75;"><strong>02 &middot; Opening a record, logging a call, qualification fields</strong><br>Recording in progress - placeholder until the file is uploaded.</figcaption>
+              </figure>
+              <figure style="margin:0 0 20px;">
+                <video controls preload="metadata" playsinline style="width:100%;max-width:760px;display:block;border-radius:10px;background:#000;">
+                  <source src="videos/03.mp4" type="video/mp4">
+                  Your browser cannot play this file. <a href="videos/03.mp4">Download the recording</a>.
+                </video>
+                <figcaption style="font-size:13px;line-height:1.5;margin-top:6px;opacity:.75;"><strong>03 &middot; Setting a Follow-up Date</strong><br>Recording in progress - placeholder until the file is uploaded.</figcaption>
+              </figure>
+              <figure style="margin:0 0 20px;">
+                <video controls preload="metadata" playsinline style="width:100%;max-width:760px;display:block;border-radius:10px;background:#000;">
+                  <source src="videos/04.mp4" type="video/mp4">
+                  Your browser cannot play this file. <a href="videos/04.mp4">Download the recording</a>.
+                </video>
+                <figcaption style="font-size:13px;line-height:1.5;margin-top:6px;opacity:.75;"><strong>04 &middot; Marking a lead NOT INTERESTED and setting a reason</strong><br>Recording in progress - placeholder until the file is uploaded.</figcaption>
+              </figure>
+              <figure style="margin:0 0 20px;">
+                <video controls preload="metadata" playsinline style="width:100%;max-width:760px;display:block;border-radius:10px;background:#000;">
+                  <source src="videos/05.mp4" type="video/mp4">
+                  Your browser cannot play this file. <a href="videos/05.mp4">Download the recording</a>.
+                </video>
+                <figcaption style="font-size:13px;line-height:1.5;margin-top:6px;opacity:.75;"><strong>05 &middot; Do Not Contact and Email Opt Out</strong><br>Recording in progress - placeholder until the file is uploaded.</figcaption>
+              </figure>
+              
+              
             </div>
           </div>
         `
@@ -1745,6 +1811,18 @@
               <label>Template hygiene</label>
               Every customer message ends with your name, "Beycome," and your direct number. Never send wire instructions, SSNs, or account numbers by text or email. Never promise a rebate figure the lender hasn't confirmed.
             </div>
+
+
+            <h3>Walkthrough videos</h3>
+            <div class="walkthroughs">
+              <figure style="margin:0 0 20px;">
+                <video controls preload="metadata" playsinline style="width:100%;max-width:760px;display:block;border-radius:10px;background:#000;">
+                  <source src="videos/06.mp4" type="video/mp4">
+                  Your browser cannot play this file. <a href="videos/06.mp4">Download the recording</a>.
+                </video>
+                <figcaption style="font-size:13px;line-height:1.5;margin-top:6px;opacity:.75;"><strong>06 &middot; Sending the Buyer Program email with the BBA link</strong><br>Recording in progress - placeholder until the file is uploaded.</figcaption>
+              </figure>
+            </div>
           </div>
         `
       },
@@ -1901,6 +1979,25 @@
 
             <h3>Offers on Beycome listings</h3>
             <p>Not through you. Beycome represents the seller on those, and we do not do dual representation. The buyer can submit directly through the site. Their Buyer Program credit does not apply to that home.</p>
+
+
+            <h3>Walkthrough videos</h3>
+            <div class="walkthroughs">
+              <figure style="margin:0 0 20px;">
+                <video controls preload="metadata" playsinline style="width:100%;max-width:760px;display:block;border-radius:10px;background:#000;">
+                  <source src="videos/07.mp4" type="video/mp4">
+                  Your browser cannot play this file. <a href="videos/07.mp4">Download the recording</a>.
+                </video>
+                <figcaption style="font-size:13px;line-height:1.5;margin-top:6px;opacity:.75;"><strong>07 &middot; Marking BBA Signed after Zoho Sign completes</strong><br>Recording in progress - placeholder until the file is uploaded.</figcaption>
+              </figure>
+              <figure style="margin:0 0 20px;">
+                <video controls preload="metadata" playsinline style="width:100%;max-width:760px;display:block;border-radius:10px;background:#000;">
+                  <source src="videos/10.mp4" type="video/mp4">
+                  Your browser cannot play this file. <a href="videos/10.mp4">Download the recording</a>.
+                </video>
+                <figcaption style="font-size:13px;line-height:1.5;margin-top:6px;opacity:.75;"><strong>10 &middot; What the buyer sees when they open the BBA link</strong><br>Recording in progress - placeholder until the file is uploaded.</figcaption>
+              </figure>
+            </div>
           </div>
         `
       },
@@ -1976,6 +2073,15 @@
               <li><strong>Beycome Title</strong> in Florida and Texas</li>
               <li><strong>Armadillo</strong> home warranty on some Beycome listings (the buyer's home, if it was a Beycome listing, is not your deal, but you may hear the name)</li>
             </ul>
+
+
+            <h3>Walkthrough videos</h3>
+            <div class="walkthroughs">
+              <figure style="margin:0 0 20px;">
+                <img src="images/17b.png" alt="Change Status to Closed notification" style="width:100%;max-width:760px;display:block;border-radius:10px;border:1px solid #e0e0e0;">
+                <figcaption style="font-size:13px;line-height:1.5;margin-top:6px;opacity:.75;"><strong>17b &middot; What the closed notification looks like</strong><br>Subject: [Property ID] | [MLS] | Change Status to Closed</figcaption>
+              </figure>
+            </div>
           </div>
         `
       },
@@ -2449,9 +2555,9 @@
         questions: [
           { id: 's2q1', prompt: 'Where do you submit a showing request?', options: ['Directly in Showami', 'Back Office', 'Zoho Cliq to Christian G', 'Email to the listing agent'], correct: 1, explanation: 'Showing requests go in Back Office. Christian Linaza books them on Showami and you get an email confirmation.' },
           { id: 's2q2', prompt: 'Which system is the required channel for every call and text?', options: ['Your personal phone', 'Zoho Mail', 'Zoho Voice', 'WhatsApp'], correct: 2, explanation: 'Zoho Voice, from inside the CRM record, so every call auto-logs and is recorded.' },
-          { id: 's2q3', prompt: 'How many Buyer Broker Agreement links exist in Zoho Sign, and why?', options: ['One national link', 'Two: FL/TX (includes the ABA disclosure) and all other states', 'One per state', 'Two: cash buyers and financed buyers'], correct: 1, explanation: 'FL/TX includes the Affiliated Business Arrangement disclosure. Everyone else gets the other-states link.' },
-          { id: 's2q4', prompt: 'A contact tells you to stop calling. What do you do in Zoho?', options: ['Set status to Dead / Lost', 'Delete the record', 'Check the DNC flag immediately; status stays as-is', 'Set a follow-up date 90 days out'], correct: 2, explanation: 'DNC is a flag, not a status. It suppresses all outreach while keeping the record history.' },
-          { id: 's2q5', prompt: 'Which field triggers the downstream automation when a BBA is signed?', options: ['Status = Interested', 'Buyer Agreement Signed = Yes', 'Follow-up Date', 'Call Notes'], correct: 1, explanation: 'Flip Buyer Agreement Signed to Yes the moment Zoho Sign completes.' }
+          { id: 's2q3', prompt: 'How many Buyer Broker Agreement links exist in Zoho Sign, and why?', options: ['One SignForm link the buyer opens and signs', 'Two: FL/TX and all other states', 'One per state', 'Two: cash buyers and financed buyers'], correct: 1, explanation: 'FL/TX includes the Affiliated Business Arrangement disclosure. Everyone else gets the other-states link.' },
+          { id: 's2q4', prompt: 'A contact tells you to stop calling. What do you do in Zoho?', options: ['Set status to LOST (DUPLICATES)', 'Delete the record', 'Check the Do Not Contact box immediately; status stays as-is', 'Set a follow-up date 90 days out'], correct: 2, explanation: 'DNC is a flag, not a status. It suppresses all outreach while keeping the record history.' },
+          { id: 's2q5', prompt: 'Which field triggers the downstream automation when a BBA is signed?', options: ['Status = UPON SALE', 'BBA Signed = Yes', 'Follow-up Date', 'Call Log'], correct: 1, explanation: 'Flip BBA Signed to Yes the moment Zoho Sign completes.' }
         ]
       },
       3: {
@@ -2482,8 +2588,8 @@
         title: 'Knowledge Check · Pipeline & CRM',
         displayCount: 4,
         questions: [
-          { id: 's5q1', prompt: 'A Beycome seller says "I\'ll buy, but only after this one closes." Status?', options: ['Interested', 'Future Follow-Up', 'Upon Sale', 'Active Buyer'], correct: 2, explanation: 'Upon Sale. Monthly touch, and the under-contract email trigger promotes them.' },
-          { id: 's5q2', prompt: 'A buyer says they plan to buy in about 8 months. Status?', options: ['Active Buyer', 'Future Follow-Up', 'Not Interested', 'No Response'], correct: 1, explanation: 'Six months or more out is Future Follow-Up with a monthly touch.' },
+          { id: 's5q1', prompt: 'A Beycome seller says "I\'ll buy, but only after this one closes." Status?', options: ['NEW', 'LONG TERM FOLLOW UP', 'UPON SALE', 'ACTIVE BUYERS'], correct: 2, explanation: 'UPON SALE. Monthly touch, and the under-contract email trigger promotes them.' },
+          { id: 's5q2', prompt: 'A buyer says they plan to buy in about 8 months. Status?', options: ['ACTIVE BUYERS', 'LONG TERM FOLLOW UP', 'NOT INTERESTED', 'FOLLOW UP - NO ANSWER'], correct: 1, explanation: 'Six months or more out is LONG TERM FOLLOW UP with a monthly touch.' },
           { id: 's5q3', prompt: 'You close a lead as Not Interested. What is required?', options: ['Nothing', 'A follow-up date', 'A disqualification reason', 'Sam\'s approval'], correct: 2, explanation: 'Every dead lead has a reason. Sam uses this data to fix the website, the scripts, and the coverage map.' },
           { id: 's5q4', prompt: 'Which signed BBA does NOT count toward your weekly target?', options: ['A first-time buyer', 'A buyer who is pre-approved', 'A buyer who is unreachable after signing', 'A buyer in Georgia'], correct: 2, explanation: 'Duplicates, fake info, unreachable after signing, or already represented elsewhere do not count.' },
           { id: 's5q5', prompt: 'What is the shared health metric to watch?', options: ['Calls per day', 'BBA signed to first showing scheduled', 'Emails sent', 'Website visits'], correct: 1, explanation: 'It tells us whether we are signing real buyers and whether the showing handoff is working.' },
@@ -2590,7 +2696,7 @@
           { id: 's16q2', prompt: 'A website form alert hits during your outbound block. You:', options: ['Finish the block first', 'Drop everything and call inside 5 minutes', 'Add it to tomorrow', 'Text them'], correct: 1, explanation: 'Nothing outranks a fresh website lead.' },
           { id: 's16q3', prompt: 'Which is NOT on the end-of-day check?', options: ['Zero website leads uncalled', 'Zero follow-up dates in the past', 'Zero closed leads without a reason', 'Zero emails in your inbox'], correct: 3, explanation: 'The check is about leads with clocks and CRM truth, not inbox zero.' },
           { id: 's16q4', prompt: 'By Day 60 you should be:', options: ['Still shadowing Sam on every call', 'Consistently at 5+ BBAs a week and handling counters without Sam on the line', 'Running the title department', 'Managing Christian G'], correct: 1, explanation: 'Day 30 is the cadence on autopilot, Day 60 is the target hit consistently, Day 90 is owning the department.' },
-          { id: 's16q5', prompt: 'On Day 1, what do you do with the two BBA links?', options: ['Send them to every lead in the queue', 'Send them to yourself and open both so you know which is which', 'Ignore them until week 2', 'Post them in Cliq'], correct: 1, explanation: 'Know the FL/TX link from the other-states link before you send either to a buyer.' }
+          { id: 's16q5', prompt: 'On Day 1, what do you do with the two BBA links?', options: ['Send them to every lead in the queue', 'Send them to yourself and open both so you know which is which', 'Ignore them until week 2', 'Post them in Cliq'], correct: 1, explanation: 'There is one Buyer Broker Agreement SignForm link. Open it yourself before you send it to a buyer.' }
         ]
       },
       18: {
